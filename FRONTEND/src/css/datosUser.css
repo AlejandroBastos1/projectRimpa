@@ -1,0 +1,261 @@
+.contenedorMisDatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+}
+
+.formulario1 h2 {
+  color: rgb(186, 231, 96);
+}
+
+.datosUsuario {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.9em;
+}
+
+.fotoUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.botonesFotoUsuario  {
+  border-radius: 8px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(75, 75, 75);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  transition: 0.3s;
+  border-style: none;
+}
+
+.botonesFotoUsuario:hover {
+  color: rgb(186, 231, 96);
+  background-color: rgb(44, 44, 44);
+}
+
+.botonesFotoUsuario button:focus {
+  outline: none;
+  border-style: solid;
+}
+
+.fotoUsuario img {
+  max-width: 9em;
+  height: auto;
+}
+
+.informacionTextualUsuario {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  padding: 1.5em;
+  gap: 0.6em;
+  border-style: none;
+  border-radius: 14px;
+  background-color: rgb(63, 63, 63);
+  box-shadow: 0 0 1px 1px rgba(150, 150, 150, 0.42); /* Sombra blanca */
+}
+
+.informacionTextualUsuario label {
+  color: rgb(186, 231, 96);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.informacionTextualUsuario p {
+  font-size: 0.8em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.informacionTextualUsuario input {
+  font-size: 0.8em;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+  padding: 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.informacionTextualUsuario input::placeholder {
+  text-align: justify;
+  font-weight: bold;
+  color: rgb(182, 182, 182);
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+}
+
+.informacionTextualUsuario input:focus {
+  outline: none;
+  color: white;
+}
+
+.modal-isOpen {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  padding: 1em;
+  height: auto;
+  background-color: rgb(60, 60, 59);
+  border-width: 4px;
+  border-radius: 14px;
+  color: white;
+}
+
+.botonActualizarFoto {
+  border-radius: 8px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  transition: 0.3s;
+  border-style: none;
+  outline: none;
+  box-shadow: none;
+
+}
+
+.botonActualizarFoto:hover {
+  color: rgb(186, 231, 96);
+  background-color: rgb(35, 35, 35);
+  outline: none;
+}
+
+.contenedorModalMisDatos {
+  color: rgb(186, 231, 96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 1.4em;
+}
+
+.contenedorModalMisDatos label {
+  color: rgb(186, 231, 96);
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 14px;
+  padding: 1.2em;
+  text-align: center;
+}
+
+.contenedorModalMisDatos input {
+  display: none;
+}
+
+.botonCerrarModal {
+  align-self: flex-end;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+  color: white;
+  font-weight: 12px;
+  width: 2em;
+  height: auto;
+  border-radius: 0.6em;
+  padding: 0.4em;
+}
+
+.botonCerrarModal:hover {
+  align-self: flex-end;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+  border-radius: 0.6em;
+  color: white;  
+  background-color: rgb(35, 35, 35);
+}
+
+@media only screen and (min-width: 1027px) {
+  .contenedorMisDatos {
+    display: flex;
+    background-color: rgb(63, 63, 63);
+    box-shadow: 0 0 1px 1px rgba(150, 150, 150, 0.42);
+    border-radius: 14px;
+  }
+
+  .datosUsuario {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .informacionTextualUsuario {
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0 0 1px 1px rgba(150, 150, 150, 0.42);
+  }
+  .botonesFotoUsuario {
+    border-radius: 8px;
+    color: rgb(235, 235, 235);
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.7em;
+    transition: 0.3s;
+    border-style: none;
+  }
+  
+  .botonesFotoUsuario:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .botonesFotoUsuario:focus {
+    outline: none;
+    border-style: none;
+  }
+
+  .informacionTextualUsuario input {
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(63, 63, 63);
+    padding: 0.4em;
+    border-style: none;
+    border-radius: 5px;
+  }
+  
+  .informacionTextualUsuario input::placeholder {
+    text-align: justify;
+    font-weight: bold;
+    color: rgb(182, 182, 182);
+    font-weight: bold;
+    background-color: rgb(63, 63, 63);
+  }
+  
+  .informacionTextualUsuario input:focus {
+    outline: none;
+    color: white;
+  }
+}

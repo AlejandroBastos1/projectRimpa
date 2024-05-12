@@ -1,0 +1,43 @@
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(24, 24, 24);
+  min-height: calc(100vh - 40px);
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.loader {
+  border: 0.2em solid rgba(24, 24, 24, 0); /* Borde azul */
+  border-radius: 100% ; /* Hace que el loader tenga forma de círculo */
+  border-top: 4px solid rgb(186, 231, 96);/* Borde superior transparente */
+  width: 2em; /* Ancho del loader */
+  height: 2em; /* Altura del loader */
+  animation: spin 1s linear infinite; /* Animación de giro */
+  color: white;
+}
+
+/* Animación de giro */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Rotación inicial */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotación completa */
+  }
+}

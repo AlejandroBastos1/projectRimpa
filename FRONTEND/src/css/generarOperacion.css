@@ -1,0 +1,324 @@
+.contenedorGenerarOperacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 1.2em;
+  border-radius: 14px;
+  margin: 2em;
+  background-color: rgba(179, 179, 179, 0.155);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42);
+}
+
+.contenedorOperacionExistente {
+  display: flex;
+  color: rgb(166, 195, 108);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.contenedorOperacionExistente a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.contenedorGenerarOperacion label {
+  color: rgb(166, 195, 108);
+}
+
+.tituloGenerarOperacion {
+  color: rgb(166, 195, 108);
+  display: flex;
+  gap: 1em;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedorAggInfoMate {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contenedorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contenedorAvion {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contenedorMatricula {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.contenedorEspecificacionesAvion {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  gap: 0.5em;
+}
+.contenedorEspecificacionesAvion h3 {
+  color: rgb(166, 195, 108);
+}
+
+.contenedorEspecificacionesAvion p {
+  color: rgb(255, 255, 255);
+}
+
+.contenedorTripulacion1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contenedorTripCabina {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.contenedorTripCabina p{
+color: white;
+}
+
+.contenedorDesp {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contenedorInfoDespegueAterrizaje {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  align-items: start;
+  justify-self: center;
+  text-align: center;
+}
+
+.contenedorAggInfoMate {
+  color: black;
+  font-weight: bold;
+}
+
+.botonEnviar{
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 48, 255);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  transition: 0.3s;
+  width: 9em;
+  border-style: none;
+}
+
+.botonEnviar{
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 48, 255);
+}
+
+.botonEnviar{
+  outline: none;
+  background-color: rgb(47, 85, 255);
+}
+
+.contenedorInfo select {
+  width: 14em;
+  font-size: 0.8em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+  padding: 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.contenedorInfo select::placeholder {
+  color: rgba(255, 235, 205, 0.36);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.contenedorInfo select:focus {
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.contenedorInfo input {
+  font-size: 0.8em;
+  width: 13.5em;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-weight: bold;
+  padding: 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.contenedorInfo input::placeholder {
+  background-color: rgb(24, 24, 24);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.contenedorInfo input:focus {
+  outline: none;
+  color: white;
+}
+
+.contenedorMaterialGenerar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  padding: 1em;
+  background-color: rgb(24, 24, 24);
+  gap: 1.8em;
+  width: 14em;
+  max-height: 300px;
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */  
+  overflow: scroll;
+}
+
+.contenedorMaterialGenerar p{
+  color: rgb(166, 195, 108);
+}
+
+.botonesMaterialABordo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9em;
+}
+
+.contenidoMateriales {
+  display: flex;
+  flex-direction: column;
+  max-height: 15em;
+  overflow-y: auto;
+  border-width: 0.1em;
+}
+
+.contenedorIndividualMat {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background-color: rgba(179, 179, 179, 0.155);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */  
+}
+
+.tarjetaDeMaterial {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 0.8em;
+  margin: 1em;
+}
+
+
+.tarjetaDeMaterial select {
+  width: 14em;
+  font-size: 0.8em;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+  padding: 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.tarjetaDeMaterial select::placeholder {
+  color: black;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.tarjetaDeMaterial select:focus {
+  outline: none;
+  color: white;
+}
+
+.tarjetaDeMaterial input {
+  font-size: 0.8em;
+  width: 13.5em;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-weight: bold;
+  padding: 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.tarjetaDeMaterial input::placeholder {
+  color: rgb(255, 235, 205);
+  text-align: justify;
+  font-weight: bold;
+  background-color: rgba(179, 179, 179, 0.155);
+}
+
+.tarjetaDeMaterial input:focus {
+  outline: none;
+  color: white;
+}
+
+.contenedorMaterialGenerar button {
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(65, 63, 63);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  transition: 0.3s;
+  border-style: none;
+}
+
+.contenedorMaterialGenerar button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.contenedorMaterialGenerar button:focus {
+  outline: none;
+  border-style: solid;
+  border-color: rgb(41, 41, 41);
+}
+
+@media only screen and (min-width: 1027px){
+  .contenedorAggInfoMate {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contenedorMaterialGenerar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    padding: 1em;
+    background-color: rgb(24, 24, 24);
+    gap: 1.8em;
+    width: 14em;
+    max-height: 500px;
+    box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */  
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-color: red;
+  }
+}

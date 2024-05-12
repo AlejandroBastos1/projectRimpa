@@ -1,0 +1,304 @@
+.contenedorConsultarOperacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.contenedorOperacionInexistente {
+  display: flex;
+  color: rgb(186, 231, 96);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+  border-radius: 14px;
+  margin: 2em;
+  background-color: rgba(179, 179, 179, 0.155);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+}
+
+.contenedorOperacionInexistente a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.contenedorInfoDespegue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 2em 0;
+  font-size: 0.8em;
+  gap: 3em;
+}
+
+.contenedorLugarTiempo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.contenedorLugarTiempo h4 {
+  color: rgb(186, 231, 96);
+}
+
+.contenedorLugarTiempo p {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 0.8;
+}
+
+.contenedorInformacionGeneral {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  padding: 2em;
+  gap: 0.8em;
+  align-items: center;
+  margin: 2em;
+  background-color: rgba(179, 179, 179, 0.155);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+  border-radius: 14px;
+}
+
+.informacionVuelo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.informacionVuelo h3 {
+  color: rgb(186, 231, 96);
+}
+
+.informacionVuelo ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.informacionVuelo li {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: white;
+}
+
+.informacionVuelo button {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  transition: 0.3s;
+  border-style: none;
+}
+
+.informacionVuelo button:hover {
+  color: rgb(186, 231, 96);
+  background-color: rgb(84, 82, 82);
+}
+
+.informacionVuelo button:focus {
+  outline: none;
+  border-style: solid;
+  border-color: rgb(106, 106, 106);
+}
+
+.modal-isOpen {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: auto;
+  background-color: rgb(60, 60, 59);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+  border-width: 4px;
+  border-radius: 14px;
+  color: white;
+}
+
+.contenedorModalInforTrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2em;
+  margin: 1.5em;
+}
+
+.contenedorModalInforTrip h3 {
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(186, 231, 96);
+}
+.contenedorModalInforTrip ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+.contenedorModalInforTrip li {
+  color: white;
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.contenedorDatosTrip {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8em;
+}
+
+.contenedorDatosTrip h3 {
+  color: rgb(186, 231, 96);
+  font-size: 1.1em;
+}
+
+.informacionCarga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.informacionCarga h4 {
+  color: rgb(186, 231, 96);
+}
+
+.contenedorMaterialesAbordo {
+  max-height: 15em;
+  overflow-y: auto;
+  border-style: none;
+  border-width: 0.1em;
+  padding: 1.4em;
+  border-radius: 14px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+}
+
+.listaMateriales {
+  padding: 0;
+  list-style-type: none;
+}
+
+.contenedorMaterialConsulta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  padding: 1em;
+  background-color: rgba(179, 179, 179, 0.155);
+  list-style-type: none;
+}
+
+.contenedorMaterialConsulta li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8em;
+}
+
+.contenedorMaterialConsulta li h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  list-style: none;
+  font-weight: bold;
+  color: rgb(186, 231, 96);
+}
+
+.contenedorMaterialConsulta li p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  list-style: none;
+  font-weight: bold;
+  color: white;
+}
+
+.contenedorMaterial h3 {
+  color: rgb(186, 231, 96);
+}
+
+.botonFinalizarOperacion {
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 140, 0);
+  border-radius: 14px;
+  box-shadow: none;
+  border-style: none;
+  font-weight: bold;
+}
+
+.botonFinalizarOperacion:hover {
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 162, 48);
+  box-shadow: none;
+  border-style: none;
+  font-weight: bold;
+  border-radius: 14px;
+}
+
+.botonFinalizarOperacion:active {
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 162, 48);
+  box-shadow: none;
+  border-style: none;
+  font-weight: bold;
+  border-radius: 14px;
+}
+
+@media only screen and (min-width: 1027px) {
+
+  .contenedorLugarTiempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(179, 179, 179, 0.155);
+    box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+    border-radius: 14px;
+    padding: 1em;
+  }
+
+  .contenedorInformacionGeneral {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+}

@@ -1,0 +1,130 @@
+.contenedorCampoObligatorio {
+  font-size: 0.6em;
+  color: red;
+  margin: 0px;
+}
+
+.errorFormularioRegistro{
+  color: rgb(255, 0, 0);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedorRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: rgb(95, 95, 95);
+  border-width: 1px;
+  border-radius: 16px;
+  margin: 3em;
+  padding: 3em;
+  gap: 0.9em;
+  background-color: rgba(179, 179, 179, 0.155);
+  box-shadow: 0 0 1px 1px rgba(156, 156, 156, 0.42); /* Sombra blanca */
+}
+
+.contenedorTituloRegistro {
+  color: rgb(186, 231, 96);
+}
+
+.contenedorFormularioRegistro {
+  gap: 0.5em;
+}
+
+.formularioRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.errorFormularioRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.formularioRegistro input {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: 0.4em;
+  border-style: none;
+  border-color: grey;
+  border-radius: 4px;
+  border-width: 0.1em;
+  box-shadow: 3em;
+  transition: 0.2s;
+}
+
+.formularioRegistro input::placeholder {
+  color: grey;
+}
+
+.formularioRegistro input:focus {
+  background-color: white;;
+  color: rgb(26, 26, 26);
+  font-size: 0.9em;
+  padding: 0.4em;
+  border-style: none;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 4px;
+  border-width: 0.1em;
+  outline: none;
+}
+
+.formularioRegistro input:focus::placeholder {
+  color: rgb(62, 62, 62);
+}
+
+.formularioRegistro button {
+  color: rgb(40, 40, 40);
+  line-height: 1.5em;
+  padding: 0.4em;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 14px;
+  background-color: rgb(199, 199, 199);
+  transition: 0.4s;
+}
+
+.formularioRegistro button:active {
+  padding: 0.em;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  background-color: rgb(139, 139, 139);
+}
+
+.formularioRegistro button:hover {
+  padding: 0.4em;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  background-color: rgb(139, 139, 139);
+
+}
+
+.contenedorTienesUnaCuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.logueate {
+  color: white;
+}
+
+
